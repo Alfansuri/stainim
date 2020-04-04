@@ -20,21 +20,21 @@
                                             </div>
                                             <div class="gdlr-core-pbf-element">
                                                 <div class="gdlr-core-course-search-item gdlr-core-item-pdb gdlr-core-item-pdlr">
-                                                    <form class="gdlr-core-course-form clearfix" action="#" method="GET">
+                                                    <form class="gdlr-core-course-form clearfix" action="<?php echo site_url('pendaftaran/daftar'); ?>" method="POST">
                                                         <div class=" gdlr-core-course-column gdlr-core-column-30 gdlr-core-column-first">
                                                             <div class="gdlr-core-course-search-field gdlr-core-course-field-keywords">
-                                                                <input type="text" placeholder="Nama Lengkap" name="course-keywords" value="" />
+                                                                <input type="text" placeholder="Nama Lengkap" name="nama" value="<?php echo set_value('nama'); ?>">
                                                             </div>
                                                         </div>
                                                         <div class=" gdlr-core-course-column gdlr-core-column-30">
                                                             <div class="gdlr-core-course-search-field gdlr-core-course-field-course-id">
-                                                                <input type="text" placeholder="Alamat Lengkap" name="course-id" value="" />
+                                                                <input type="text" placeholder="Alamat Lengkap" name="alamat" value="<?php echo set_value('alamat'); ?>">
                                                             </div>
                                                         </div>
                                                         <div class=" gdlr-core-course-column gdlr-core-column-30 gdlr-core-column-first">
                                                             <div class="gdlr-core-course-search-field gdlr-core-course-field-department">
                                                                 <div class="gdlr-core-course-form-combobox gdlr-core-skin-e-background">
-                                                                    <select class="gdlr-core-skin-e-content" name="department">
+                                                                    <select class="gdlr-core-skin-e-content" name="asal_sekolah">
                                                                         <option value="">Asal Sekolah</option>
                                                                         <option value="SMA">SMA</option>
                                                                         <option value="SMK">SMK</option>
@@ -46,13 +46,13 @@
                                                         </div>
 														<div class=" gdlr-core-course-column gdlr-core-column-30">
                                                             <div class="gdlr-core-course-search-field gdlr-core-course-field-course-id">
-                                                                <input type="text" placeholder="Nama Sekolah" name="course-id" value="" />
+                                                                <input type="text" placeholder="Nama Sekolah" name="sekolah" value="<?php echo set_value('sekolah'); ?>">
                                                             </div>
                                                         </div>
                                                         <div class=" gdlr-core-course-column gdlr-core-column-30">
                                                             <div class="gdlr-core-course-search-field gdlr-core-course-field-campus">
                                                                 <div class="gdlr-core-course-form-combobox gdlr-core-skin-e-background">
-                                                                    <select class="gdlr-core-skin-e-content" name="campus">
+                                                                    <select class="gdlr-core-skin-e-content" name="warga">
                                                                         <option value="">Warga Negara</option>
                                                                         <option value="WNI">WNI</option>
                                                                         <option value="WNA">WNA</option> 
@@ -62,21 +62,21 @@
                                                         </div> 
                                                         <div class=" gdlr-core-course-column gdlr-core-column-30">
                                                             <div class="gdlr-core-course-search-field gdlr-core-course-field-course-id">
-                                                                <input type="text" placeholder="No Whatsapp" name="course-id" value="" />
+                                                                <input type="text" placeholder="No Whatsapp" name="whatsapp" value="<?php echo set_value('whatsapp'); ?>">
                                                             </div>
                                                         </div>
                                                         <div class=" gdlr-core-course-column gdlr-core-column-30 gdlr-core-column-first">
                                                             <div class="gdlr-core-course-search-field gdlr-core-course-field-course-id">
-                                                                <input type="text" placeholder="NIK" name="course-id" value="" />
+                                                                <input type="text" placeholder="NIK" name="nik" value="<?php echo set_value('nik'); ?>">
                                                             </div>
                                                         </div>
                                                         <div class=" gdlr-core-course-column gdlr-core-column-30"> 
                                                             <div class="gdlr-core-course-search-field gdlr-core-course-field-course-id">
-                                                                <input type="email" placeholder="Email" name="course-id" value="" />
+                                                                <input type="email" placeholder="Email" name="email" value="<?php echo set_value('email'); ?>">
                                                             </div>
                                                         </div>
                                                         <div class="gdlr-core-course-form-submit gdlr-core-course-column gdlr-core-column-first gdlr-core-center-align">
-                                                            <input class="gdlr-core-full-size" type="submit" value="Daftar" />
+                                                            <input class="gdlr-core-full-size" type="submit" value="Daftar">
                                                         </div>
                                                     </form>
                                                 </div>
